@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 100%;
+        height: 0.1rem;
+        background-color: palevioletred;
+    }
+}
+
+@mixin border($color: paleturquoise, $padding: 1rem) {
+    padding: $padding;
+    border: 2px solid $color;
+    border-radius: 0.4rem;
+}
+
+
