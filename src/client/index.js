@@ -9,7 +9,6 @@ import "./styles/form.scss";
 import "./styles/header.scss";
 
 console.log(checkForName);
-getData();
 // alert("I EXIST")
 console.log("CHANGE!!");
 
